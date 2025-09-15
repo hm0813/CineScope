@@ -15,7 +15,7 @@ const Home = () => {
                 <title>Letterboxd Movie Recommendations</title>
                 <link
                     rel="canonical"
-                    href="https://www.recommendations.harshitamathpal.com/"
+                    href="https://www.recommendations.victorverma.com/"
                 />
             </Helmet>
 

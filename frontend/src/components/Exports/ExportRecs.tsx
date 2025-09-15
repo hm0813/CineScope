@@ -120,7 +120,7 @@ const ExportRecs = ({
 
                     <div className="mt-2 flex justify-between">
                         <h1 className="text-palette-darkbrown">
-                            www.recommendations.harshitamathpal.com
+                            www.recommendations.victorverma.com
                         </h1>
                         <h1 className="text-palette-darkbrown">
                             {generatedDatetime}

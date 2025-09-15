@@ -33,7 +33,7 @@ class TestRecommendations:
         """
         payload = {
             "currentQuery": {
-                "usernames": ["harshitamathpal"],
+                "usernames": ["victorverma"],
                 "model_type": "personalized",
                 "genres": [
                     "action",
@@ -80,7 +80,7 @@ class TestRecommendations:
         """
         payload = {
             "currentQuery": {
-                "usernames": ["harshitamathpal", "jconn8"],
+                "usernames": ["victorverma", "jconn8"],
                 "model_type": "personalized",
                 "genres": [
                     "action",
@@ -135,7 +135,7 @@ class TestNaturalLanguageRecommendations:
         """
         payload = {
             "currentFilterQuery": {
-                "username": "harshitamathpal",
+                "username": "victorverma",
                 "description": "I want to watch an 80s action-comedy movie.",
             }
         }
@@ -154,7 +154,7 @@ class TestNaturalLanguageRecommendations:
 
         payload = {
             "currentFilterQuery": {
-                "usernames": "harshitamathpal",
+                "usernames": "victorverma",
                 "description": "Lately, I've been noticing how my sentences have a tendency to keep going when I write them onscreen. This goes for concentrated writing as well as correspondence. (Twain probably believed that correspondence, in an ideal world, also demands concentration. But he never used email.) Last week I caught myself packing four conjunctions into a three-line sentence in an email. That's inexcusable. Since then, I have tried to eschew conjunctions whenever possible. Gone are the commas, the and's, but's, and so's; in are staccato declaratives. Better to read like bad Hemingway than bad Faulkner.",
             }
         }
@@ -177,7 +177,7 @@ class TestStatistics:
         """
         Tests the statistics route with a single user.
         """
-        payload = {"username": "harshitamathpal"}
+        payload = {"username": "victorverma"}
 
         response = client.post(
             "/api/get-statistics",
@@ -199,7 +199,7 @@ class TestWatchlist:
         """
         payload = {
             "data": {
-                "userList": ["harshitamathpal"],
+                "userList": ["victorverma"],
                 "overlap": "y",
                 "pick_type": "random",
             }
@@ -221,7 +221,7 @@ class TestWatchlist:
         """
         payload = {
             "data": {
-                "userList": ["harshitamathpal", "jconn8"],
+                "userList": ["victorverma", "jconn8"],
                 "overlap": "y",
                 "pick_type": "random",
             }
@@ -243,7 +243,7 @@ class TestWatchlist:
         """
         payload = {
             "data": {
-                "userList": ["harshitamathpal", "jconn8"],
+                "userList": ["victorverma", "jconn8"],
                 "overlap": "y",
                 "pick_type": "random",
             }
@@ -265,7 +265,7 @@ class TestWatchlist:
         """
         payload = {
             "data": {
-                "userList": ["harshitamathpal"],
+                "userList": ["victorverma"],
                 "overlap": "y",
                 "pick_type": "recommendation",
             }
@@ -287,7 +287,7 @@ class TestWatchlist:
         """
         payload = {
             "data": {
-                "userList": ["harshitamathpal", "jconn8"],
+                "userList": ["victorverma", "jconn8"],
                 "overlap": "y",
                 "pick_type": "recommendation",
             }
@@ -309,7 +309,7 @@ class TestWatchlist:
         """
         payload = {
             "data": {
-                "userList": ["harshitamathpal", "jconn8"],
+                "userList": ["victorverma", "jconn8"],
                 "overlap": "y",
                 "pick_type": "recommendation",
             }

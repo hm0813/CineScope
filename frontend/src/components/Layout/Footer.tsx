@@ -4,7 +4,7 @@ import linkedinlogo from "../../images/linkedinlogo.png";
 
 const logos = [
     {
-        link: "mailto:harshitamathpal5@gmail.com",
+        link: "mailto:victorverma5@gmail.com",
         image: emaillogo,
         alt: "Email Logo,",
     },
@@ -30,7 +30,7 @@ const helpLinks = [
         text: "Feedback/Bugs",
         link: "https://docs.google.com/forms/d/e/1FAIpQLSfjRGNe8ORq0twg8hhzXiC3dNCqFErf3upZFuKtaafzrhgv0g/viewform?usp=header",
     },
-    { text: "Donations", link: "https://ko-fi.com/harshitamathpal" },
+    { text: "Donations", link: "https://ko-fi.com/victorverma" },
 ];
 
 const Footer = () => {
@@ -40,7 +40,7 @@ const Footer = () => {
                 Created by{" "}
                 <a
                     className="underline shadow-sm hover:decoration-palette-darkbrown hover:opacity-75"
-                    href="https://www.harshitamathpal.com/"
+                    href="https://www.victorverma.com/"
                     target="_blank"
                 >
                     Harshita Mathpal
@@ -55,7 +55,7 @@ const Footer = () => {
                 |{" "}
                 <a
                     className="underline shadow-sm hover:decoration-palette-darkbrown hover:opacity-75"
-                    href="https://github.com/harshitamathpal3/CineScope"
+                    href="https://github.com/victorverma3/CineScope"
                     target="_blank"
                 >
                     Code
