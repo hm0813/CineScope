@@ -1,5 +1,5 @@
 ## 🔗 Live Demo
-👉 [Click Here](https://cinescope.vercel.app)  
+👉 [Click Here](https://cine-scope-five.vercel.app/)  
 
 # 🎥 CineScope — Movie Recommendations & Profile Stats
 
