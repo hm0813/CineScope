@@ -1,0 +1,200 @@
+[
+    {
+        "release": "v1.4.2",
+        "date": "9/14/25",
+        "notes": [
+            "Added a rewatches filter that allows rewatches to be recommended if toggled on (only available for group suggestions).",
+            "Added a highly-rated filter that only includes movies with a Letterboxd rating ≥ 3.5 if toggled on.",
+            "Overhauled the popularity filter.",
+            "Fixed bugs involving misapplied genre filters, incorrect recommendations, unnecessary rate limiting, and profile scraping.",
+            "Increased server request timeout limits."
+        ]
+    },
+    {
+        "release": "v1.4.1",
+        "date": "8/19/25",
+        "notes": [
+            "Migrated backend server deployment from Render to Amazon Lightsail.",
+            "Increased backend server RAM to 1GB.",
+            "Improved memory efficiency.",
+            "Set maximum filter description length to 50 tokens.",
+            "Filter description can now only be used on one username due to memory constraints."
+        ]
+    },
+    {
+        "release": "v1.4.0",
+        "date": "8/7/25",
+        "notes": [
+            "Integrated OpenAI's GPT-5 Nano to enable users to generate recommendation filters through natural language descriptions.",
+            "Improved watchlist picker performance by caching user watchlists.",
+            "Implemented reasonable rate-limiting to stabilize server capacity.",
+            "Deprecated the general recommendation model and model type filter.",
+            "Improved SEO by updating the site description and adding llms.txt.",
+            "Various performance improvements.",
+            "Performed EDA on training features of movie data.",
+            "Simplified long-term maintenance improvements by adding docstrings and IDE configuration settings.",
+            "Added an MIT license."
+        ]
+    },
+    {
+        "release": "v1.3.9",
+        "date": "7/5/25",
+        "notes": [
+            "Created a general recommendation model designed to generate suggestions based on the rating habits of a typical Letterboxd user.",
+            "Updated the FAQ.",
+            "Minor tweaks and improvements in codebase organization."
+        ]
+    },
+    {
+        "release": "v1.3.8",
+        "date": "6/30/25",
+        "notes": [
+            "Implemented caching for movie data with an automatic monthly reset when the movie data is updated.",
+            "Implemented temporary caching for user ratings, improving response times for repeated requests by up to 10x.",
+            "Improved server efficiency and memory consumption.",
+            "Updated the FAQ."
+        ]
+    },
+    {
+        "release": "v1.3.7",
+        "date": "6/28/25",
+        "notes": [
+            "Fixed critical bug that prevented some movies from being used in the recommendation model and user statistics.",
+            "Improved content type labeling on movies and TV shows in the dataset.",
+            "Increased functionality of script to scrape movie data."
+        ]
+    },
+    {
+        "release": "v1.3.6",
+        "date": "6/27/25",
+        "notes": [
+            "Created a release notes page.",
+            "Fixed bug with watchlist recommendations.",
+            "Automated movie data update now occurs only on the 15th of each month."
+        ]
+    },
+    {
+        "release": "v1.3.5",
+        "date": "6/13/25",
+        "notes": [
+            "Added a content type filter allowing users to generate recommendations for movies, TV shows, or both."
+        ]
+    },
+    {
+        "release": "v1.3.4",
+        "date": "5/29/25",
+        "notes": [
+            "Added support to export recommendations, statistics, and the rating distribution as PNG images.",
+            "Miscellaneous UI improvements and bug fixes.",
+            "Slightly improved watchlist picker efficiency.",
+            "Implemented typing in the backend.",
+            "Improved search engine optimization (SEO).",
+            "Integrated Google AdSense.",
+            "Automated movie data updates now occur only on the 7th and 22nd of each month."
+        ]
+    },
+    {
+        "release": "v1.3.3",
+        "date": "3/13/25",
+        "notes": [
+            "Added recommendations for user watchlists.",
+            "Miscellaneous improvements and bug fixes."
+        ]
+    },
+    {
+        "release": "v1.3.2",
+        "date": "2/28/25",
+        "notes": [
+            "Redesigned the statistics page.",
+            "Rating distribution can be downloaded on a desktop.",
+            "Changed runtime filter to allow the user to specifiy the minimum and maximum runtimes.",
+            "Improved efficiency while calculating user statistics.",
+            "Improved error handling and error messages.",
+            "Cleaned up old code."
+        ]
+    },
+    {
+        "release": "v1.3.1",
+        "date": "1/18/25",
+        "notes": [
+            "Created a metrics page displaying the cumulative number of users over time."
+        ]
+    },
+    {
+        "release": "v1.3.0",
+        "date": "1/15/25",
+        "notes": ["Redesigned the website UI."]
+    },
+    {
+        "release": "v1.2.4",
+        "date": "12/23/24",
+        "notes": [
+            "Fixed a bug with the profile statistics feature.",
+            "Further improved efficiency while generating movie recommendations.",
+            "Various minor improvements."
+        ]
+    },
+    {
+        "release": "v1.2.3",
+        "date": "12/21/24",
+        "notes": ["Improved efficiency while generating movie recommendations."]
+    },
+    {
+        "release": "v1.2.2",
+        "date": "12/19/24",
+        "notes": [
+            "Redesigned the filter definitions on the movie recommendations page.",
+            "Minor improvements."
+        ]
+    },
+    {
+        "release": "v1.2.1",
+        "date": "12/14/24",
+        "notes": [
+            "Slightly reduced server memory consumption while generating recommendations based on multiple user profiles.",
+            "Minor bug fixes."
+        ]
+    },
+    {
+        "release": "v1.2.0",
+        "date": "12/14/24",
+        "notes": [
+            "Redesigned the movie recommendation display to include movie posters."
+        ]
+    },
+    {
+        "release": "v1.1.2",
+        "date": "12/3/24",
+        "notes": [
+            "Shortened the placeholder text telling to separate usernames by comma.",
+            "Updated the FAQ."
+        ]
+    },
+    {
+        "release": "v1.1.1",
+        "date": "11/22/24",
+        "notes": [
+            "Multiple usernames are now processed through the same input field and must be separated by commas when using the movie recommendations or watchlist picker."
+        ]
+    },
+    {
+        "release": "v1.1.0",
+        "date": "11/15/24",
+        "notes": ["Created a FAQ page."]
+    },
+    {
+        "release": "v1.0.3",
+        "date": "11/13/24",
+        "notes": [
+            "The release year filter has been changed to allow users to specifiy the start and end release year of generated recommendations."
+        ]
+    },
+    {
+        "release": "v1.0.2",
+        "date": "11/12/24",
+        "notes": [
+            "The default popularity filter is now set to include the movies ranked in the top 20% of popularity.",
+            "There is now an additional, more promiment link to submit feedback in the center of the recommendations page."
+        ]
+    }
+]

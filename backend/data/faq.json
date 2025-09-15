@@ -1,0 +1,67 @@
+[
+    {
+        "section": "general",
+        "question": "What is my Letterboxd username?",
+        "answer": "To use this website, it is required that you enter your username (and not a custom profile display name). To view your username on the Letterboxd app, click the \"settings\" icon on the profile tab. At the top of the screen, it should say signed in as _, which is your username. To view your username on the Letterboxd website, navigate to the \"settings\" page, and there should be a profile field titled \"Username\"."
+    },
+    {
+        "section": "general",
+        "question": "Why am I getting an error, despite entering my username correctly?",
+        "answer": "Users must have rated at least 5 movies on Letterboxd to generate recommendations or calculate statistics for their profile. Additionally, this website will not work if the Letterboxd website is experiencing technical difficulties of its own. If the error persists, please report it using the form at the bottom of the website."
+    },
+    {
+        "section": "general",
+        "question": "Is any user data collected?",
+        "answer": "All Letterboxd usernames are stored, as well as the number of times they have been used on the website, so that site traffic and growth can be charted. A user's latest movie ratings are cached for an hour at a time to significantly reduce response times for repeated requests in succession. The user's IP address is stored in cache to enforce rate limits."
+    },
+    {
+        "section": "general",
+        "question": "Why is it showing minute/hourly/daily rate limited exceeded?",
+        "answer": "To prevent server overload, there are minutely, hourly, and daily rate limits. These are upper limits on the number of requests that can be sent in that time period, with each service (recommendations, statistics, watchlist picks) having their own rate limits. They are relatively generous and intended to protect against overwhelming site traffic."
+    },
+    {
+        "section": "general",
+        "question": "How can I suggest a new feature, leave feedback, or report a bug?",
+        "answer": "I am extremely receptive to feedback of any kind, and I have linked two Google forms at the bottom of the page. One of them is to submit suggestions, and the other is to share feedback and bugs. I am always looking for new features to implement!"
+    },
+    {
+        "section": "general",
+        "question": "Can I contact you?",
+        "answer": "Yes! I've linked my email, LinkedIn, and Instagram at the bottom of the page. Feel free to reach out to me to talk about my site, movies, or anything at all. If you follow me on Instagram, send a message that you're from my website (I typically remove unknown followers)."
+    },
+    {
+        "section": "general",
+        "question": "What was the inspiration for this website?",
+        "answer": "I have enjoyed watching movies since I was a kid, and I love using the Letterboxd app to log movies and compare ratings with my friends. Unfortunately, the app has no built-in recommendation feature, a glaring omission for people trying to figure out what they should watch next. A couple of years ago, I came across Sam Learner's Letterboxd recommendation model, and I owe him a lot of credit for inspiring me to undertake this project. His model is really well made and uses collaborative-filtering and singular-value decomposition. One limitation, however, is that the collaborative filtering approach does not take the chracteristics of a movie (release year, runtime, genre, etc) into account, and only focuses on user rating similarities. I saw a niche market for a content-based filtering recommendation model based entirely on movie metadata, and as a mathematics and computer science major, I thought that it would be really cool to make one myself. The initial groundwork for the project started in 2023, and v1.0.0 of the website came online in April 2024."
+    },
+    {
+        "section": "general",
+        "question": "Why are there ads on the website now?",
+        "answer": "I have to pay $7 each month for the server to keep the website operational. For the first year I paid out of pocket, but as this site gains popularity, I hope that ad revenue can help offset some of the cost."
+    },
+    {
+        "section": "recommendations",
+        "question": "How does the personalized recommendation model work?",
+        "answer": "The personalized model uses content-based filtering to recommend movies to users based on their Letterboxd profile. After a username is entered, the user's publicly accessible movie ratings are scraped from the Letterboxd website. Next, each movie's rating is merged with data detailing the characteristics of that movie, which are also scraped from the Letterboxd website and automatically updated every month. The collected characteristics include the release year, runtime, Letterboxd rating, Letterboxd rating count, country of origin, content type, and genres of the movie. After the relevant data is gathered and formatted, a random forest model is trained in real time on the user's movie data. Finally, the trained model is used to predict the movies that the user would rate the highest, amongst those they have not already seen."
+    },
+    {
+        "section": "recommendations",
+        "question": "Which movies are considered while generating personalized recommendations?",
+        "answer": "The personalized model is only trained on movies that have been given a star rating by the user. Movies that the user has marked as watched but not rated will neither be used to train the model, nor suggested in the output. The recommender system does not take the user's watchlist into account - any overlap is a coincidence (but probably a sign that the user will like that movie)."
+    },
+    {
+        "section": "recommendations",
+        "question": "How does the natural language description generate recommendations?",
+        "answer": "If the user chooses to generate recommendations using a natural language description instead of explicitly selecting filters, the input is passed to OpenAI's GPT-5 Nano. The large language model processes the description and generates the filters that it believes best fits the user's input, which are then applied to generate the final recommendations."
+    },
+    {
+        "section": "statistics",
+        "question": "How do you know that _ statistic is higher than _% of users?",
+        "answer": "Every time a user calculates their statistics, their latest stats are recorded (or updated in the case of repeat users) in the database associated with this website. Statistics are being compared relative to all of the other users' stats that already exist in the database. To ensure accurate comparisons, the recorded stats are also automatically updated on the 1st of every month."
+    },
+    {
+        "section": "watchlist",
+        "question": "What is the difference between random movies and recommendations?",
+        "answer": "If the random movies setting is selected, the watchlist picks are chosen at random from the considered watchlist(s). if the recommendations setting is selected, the watchlist picks are chosen from the considered watchlist(s) in order of the highest predicted user rating."
+    }
+]
