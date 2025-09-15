@@ -1,3 +1,6 @@
+## 🔗 Live Demo
+👉 [Click Here](https://cinescope.vercel.app)  
+
 # 🎥 CineScope — Movie Recommendations & Profile Stats
 
 CineScope is an enhanced movie recommendation system that provides tailored film suggestions using content-based filtering, along with detailed statistics about your viewing/rating habits. All you need is your Letterboxd username.
