@@ -11,7 +11,7 @@ const Watchlist = () => {
                 <title>Letterboxd Watchlist Picker</title>
                 <link
                     rel="canonical"
-                    href="https://www.recommendations.victorverma.com/watchlist-picker"
+                    href="https://www.recommendations.harshitamathpal.com/watchlist-picker"
                 />
             </Helmet>
 

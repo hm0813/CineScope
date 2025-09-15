@@ -49,7 +49,7 @@ const ReleaseNotes = () => {
                 <title>Release Notes</title>
                 <link
                     rel="canonical"
-                    href="https://www.recommendations.victorverma.com/release-notes"
+                    href="https://www.recommendations.harshitamathpal.com/release-notes"
                 />
             </Helmet>
 

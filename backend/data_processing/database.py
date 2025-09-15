@@ -451,7 +451,7 @@ def get_usage_metrics() -> Tuple[int, int]:
             count["count"]
             for count in counts[1]
             if count["username"]
-            not in ["victorverma", "jconn8", "hzielinski", "rohankumar", "hgrosse"]
+            not in ["harshitamathpal", "jconn8", "hzielinski", "rohankumar", "hgrosse"]
         )
         num_users = len(counts[1])
 

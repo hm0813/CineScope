@@ -122,7 +122,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-usl",
         "--user-list",
-        default="harryzielinski,hgrosse,jconn8,kishkes88,kmorrow16,media_scouting,rohankumar,tmarro13,victorverma,zachrichards",
+        default="harryzielinski,hgrosse,jconn8,kishkes88,kmorrow16,media_scouting,rohankumar,tmarro13,harshitamathpal,zachrichards",
         help="The users on whom the model is evaluated. If including multiple users, format the input as a single comma-delimited string.",
     )
 

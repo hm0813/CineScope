@@ -132,7 +132,7 @@ const Statistics = () => {
                 <title>Letterboxd Profile Statistics</title>
                 <link
                     rel="canonical"
-                    href="https://www.recommendations.victorverma.com/statistics"
+                    href="https://www.recommendations.harshitamathpal.com/statistics"
                 />
             </Helmet>
 

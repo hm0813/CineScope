@@ -4,7 +4,7 @@ const LetterboxdAlert = () => {
             Follow me on{" "}
             <a
                 className="underline hover:decoration-palette-darkbrown hover:opacity-75"
-                href="https://letterboxd.com/victorverma/"
+                href="https://letterboxd.com/harshitamathpal/"
                 target="_blank"
             >
                 Letterboxd

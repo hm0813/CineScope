@@ -112,7 +112,7 @@ const ExportStatistics = ({
 
                     <div className="mt-2 flex justify-between">
                         <h1 className="text-palette-darkbrown">
-                            www.recommendations.victorverma.com
+                            www.recommendations.harshitamathpal.com
                         </h1>
                         <h1 className="text-palette-darkbrown">
                             {generatedDatetime}

@@ -1,41 +1,24 @@
-import discordlogo from "../../images/discordlogo.png";
 import emaillogo from "../../images/emaillogo.png";
 import githublogo from "../../images/githublogo.png";
-import instagramlogo from "../../images/instagramlogo.png";
-import letterboxdlogo from "../../images/letterboxdlogo.png";
 import linkedinlogo from "../../images/linkedinlogo.png";
 
 const logos = [
     {
-        link: "https://letterboxd.com/victorverma",
-        image: letterboxdlogo,
-        alt: "Letterboxd Logo",
-    },
-    {
-        link: "mailto:victor.verma@icloud.com",
+        link: "mailto:harshitamathpal5@gmail.com",
         image: emaillogo,
         alt: "Email Logo,",
     },
     {
-        link: "https://www.linkedin.com/in/victorverma",
+        link: "www.linkedin.com/in/harshita-mathpal-34002924b",
         image: linkedinlogo,
         alt: "LinkedIn Logo",
     },
     {
-        link: "https://github.com/victorverma3",
+        link: "https://github.com/hm0813",
         image: githublogo,
         alt: "GitHub Logo",
     },
-    {
-        link: "https://discord.gg/6Pcfkbeh8C",
-        image: discordlogo,
-        alt: "Discord Logo",
-    },
-    {
-        link: "https://www.instagram.com/vic_verma",
-        image: instagramlogo,
-        alt: "Instagram Logo",
-    },
+   
 ];
 
 const helpLinks = [
@@ -47,7 +30,7 @@ const helpLinks = [
         text: "Feedback/Bugs",
         link: "https://docs.google.com/forms/d/e/1FAIpQLSfjRGNe8ORq0twg8hhzXiC3dNCqFErf3upZFuKtaafzrhgv0g/viewform?usp=header",
     },
-    { text: "Donations", link: "https://ko-fi.com/victorverma" },
+    { text: "Donations", link: "https://ko-fi.com/harshitamathpal" },
 ];
 
 const Footer = () => {
@@ -57,10 +40,10 @@ const Footer = () => {
                 Created by{" "}
                 <a
                     className="underline shadow-sm hover:decoration-palette-darkbrown hover:opacity-75"
-                    href="https://www.victorverma.com/"
+                    href="https://www.harshitamathpal.com/"
                     target="_blank"
                 >
-                    Victor Verma
+                    Harshita Mathpal
                 </a>{" "}
                 | v1.4.2 |{" "}
                 <a
@@ -72,7 +55,7 @@ const Footer = () => {
                 |{" "}
                 <a
                     className="underline shadow-sm hover:decoration-palette-darkbrown hover:opacity-75"
-                    href="https://github.com/victorverma3/Letterboxd-Movie-Recommendations"
+                    href="https://github.com/harshitamathpal3/CineScope"
                     target="_blank"
                 >
                     Code
