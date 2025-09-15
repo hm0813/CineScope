@@ -1,53 +1,71 @@
-# 🎬 CineScope – Movie Recommendation System
+# 🎥 CineScope — Movie Recommendations & Profile Stats
 
-CineScope is a movie recommendation system that suggests films based on user preferences.  
-It uses **collaborative filtering** and **cosine similarity** to provide personalized movie recommendations.
-
----
-
-## 🚀 Features
-- 📊 Recommends movies based on user ratings
-- 🔍 Cosine similarity for finding similar movies
-- ⚡ Fast and simple to use
-- 🌐 Can be extended into a web app (Flask / Streamlit)
+CineScope is an enhanced movie recommendation system that provides tailored film suggestions using content-based filtering, along with detailed statistics about your viewing/rating habits. All you need is your Letterboxd username.
 
 ---
 
-## 🛠 Tech Stack
-- **Python**
-- **Pandas, NumPy**
-- **Scikit-learn**
-- **Flask / Streamlit** (optional for UI)
+## 🧰 Technologies Used
+
+- **Frontend**: React + TypeScript + Tailwind CSS  
+- **Backend**: Python (Flask), Supabase (PostgreSQL), Redis, MongoDB  
+- **Infrastructure / DevOps**: Vercel (frontend), Amazon Lightsail (backend), GitHub Actions  
 
 ---
 
-## 📥 Installation
+## 🔍 Core Features
 
-1. **Clone the repo**
+### Recommendations
+- Input your Letterboxd username → get personalized movie recommendations based on your past ratings & movie metadata  
+- Filters to narrow down by genre, release year, runtime, etc.  
+- Multi-user recommendations: combine preferences of several users (e.g. for group watch)  
+
+### Statistics
+- Overview of how your ratings compare to Letterboxd community ratings  
+- Genre-wise rating trends: see which genres you prefer or rate differently than average  
+- Distribution insights: how often you rate, how “hard” or “easy” your ratings are compared to the crowd  
+
+### Watchlist Picker
+- Let CineScope pick movies from your Letterboxd watchlist  
+- Random or “highest predicted rated first” mode  
+- Support for combining watchlists of multiple users  
+
+---
+
+## 🛠 How to Run Locally
+
+1. Clone this repo  
    ```bash
    git clone https://github.com/YOUR-USERNAME/CineScope.git
    cd CineScope
-Install dependencies
+Set up backend
+
+Install Python dependencies (requirements.txt)
+
+Configure env variables / database (PostgreSQL/Supabase, Redis, MongoDB)
+
+Set up frontend
+
+Install Node.js / npm packages
+
+Adjust any environment or API URLs
+
+Start services
 
 bash
 Copy code
-pip install -r requirements.txt
-Run the app
+# Backend
+python app.py  
+# Frontend
+npm run dev
+(Optional) Deploy using your preferred hosting – for example, Vercel / AWS / Netlify for frontend; Lightsail / DigitalOcean / Heroku for backend.
 
-bash
-Copy code
-python app.py
-📊 Example
-Input: "Inception"
-Output: Movies similar to Inception based on user rating patterns.
+🚧 Limitations & What’s Next
+Resources are limited — database size, server specs, etc., may affect performance
 
-📌 Future Improvements
-🎭 Add content-based filtering
+Some filters or model improvements are experimental or partially implemented
 
-🌟 Build a complete web interface
+Next up: faster scraping / caching, more sophisticated recommendation models (e.g. two-tower, hybrid), better UX
 
-☁️ Deploy on cloud (Heroku, Vercel, or AWS)
+💡 Inspiration
+This project was inspired by wanting more than what static community ratings offer — to build something personalized, using movie metadata (genre, runtime, year, etc.), and data you already generate via Letterboxd.
 
-👩‍💻 Author
-Harshita Mathpal
-Built as a learning project to explore recommendation systems and machine learning techniques.
